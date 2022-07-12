@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <script>
+        let op=[];
+        let arr=[
+            {
+                name:'abc def',
+                age:25
+            },
+            {
+                name:'xyz pqr',
+                age:37
+            }
+        ];
+    
+
+        var arr2=arr.map((ele)=>{
+        var a=ele.name.split(" ");
+        console.log(a);
+         return  {firstname:a[0],lastname:a[1],age:ele.age};
+        })
+        console.log(arr2);
+
+        // for(let i=0;i<arr.length;i++){
+        //     var a=arr[i].name.split(" ");
+        //     console.log(" first:"+a[0]+" last:"+a[1]+" age:"+arr[i].age);
+        // }
+
+       
+        </script>
 </body>
 </html>
